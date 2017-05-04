@@ -1,11 +1,15 @@
-setwd("D:/yr4/Big_Data/Project/ipl/Analysis")
+###
 
-#install.packages("readr")
+# SET WORKING DIRECTORY TO SOURCE FILE LOCATION
+
+# Session -> Set Working Directory -> To Sourec File Location
+
+###
+
 #install.packages("sqldf")
 #install.packages("dplyr")
 
 library(sqldf)
-library(readr)
 library(dplyr)
 library(ggplot2)
 

@@ -1,18 +1,22 @@
-setwd("D:/yr4/Big_Data/Project/ipl/Analysis")
+###
+
+# SET WORKING DIRECTORY TO SOURCE FILE LOCATION
+
+# Session -> Set Working Directory -> To Sourec File Location
+
+###
 
 #install.packages("ggrepel")
-#install.packages("readr")
 #install.packages("dplyr")
 #install.packages("sqldf")
 #install.packages("ggplot2") 
 
 library(sqldf)
 library(ggplot2) 
-library(readr)
 library(dplyr)
 library(ggrepel)
 
-deliveries <- read_csv('deliveries.csv')
+deliveries <- read.csv('deliveries.csv')
 
 
 ########################################################################################################################

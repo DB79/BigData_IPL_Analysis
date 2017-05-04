@@ -1,5 +1,10 @@
+###
 
-setwd("D:/yr4/Big_Data/Project/ipl/Analysis")
+# SET WORKING DIRECTORY TO SOURCE FILE LOCATION
+
+# Session -> Set Working Directory -> To Sourec File Location
+
+###
 
 #install.packages("sqldf")
 #install.packages("rpart")
@@ -19,34 +24,7 @@ library(rpart)
 library("arules")
 library("arulesViz")
 
-#deliveries <- read.csv("deliveries.csv")
 deliveries <- read.csv("deliveries.csv", stringsAsFactors=TRUE)
-
-##############################################################################################################################
-# Add Outcome Field which is used in assocciation rules
-##############################################################################################################################
-
-
-# Dot balls - no runs scored
-
-#deliveries$outcome[deliveries$total_runs == 0] <- 'Dot Ball'
-
-# Low Score - 1 to 3 runs
-#deliveries$outcome[deliveries$total_runs == 1] <- 'Low Score'
-#deliveries$outcome[deliveries$total_runs == 2] <-'Low Score'
-#deliveries$outcome[deliveries$total_runs == 3] <-'Low Score'
-  
-# High Score - 4+ runs
-#deliveries$outcome[deliveries$total_runs == 4] <-'High Score'
-#deliveries$outcome[deliveries$total_runs == 5] <-'High Score'
-#deliveries$outcome[deliveries$total_runs == 6] <-'High Score'
-#deliveries$outcome[deliveries$total_runs == 7] <-'High Score'
-
-# Wicket - wicket taken by boler
-#deliveries$outcome[deliveries$player_dismissed != ""] <- 'Wicket'
-
-#prop.table(table(deliveries$outcome, deliveries$bowling_team),2)
-#deliveries <- read.csv("deliveries.csv", stringsAsFactors=TRUE)
 
 ##############################################################################################################################
 # Add Outcome Field which is used in assocciation rules
